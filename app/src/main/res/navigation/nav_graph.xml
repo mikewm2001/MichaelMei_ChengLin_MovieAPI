@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movieSearchFragment">
+
+    <fragment
+        android:id="@+id/movieSearchFragment"
+        android:name="com.bignerdranch.android.michaelmei_chenglin_movieapi.MovieSearchFragment"
+        android:label="MovieSearchFragment" >
+        <action
+            android:id="@+id/action_movieSearchFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment">
+            <argument
+                android:name="bundleKey"
+                app:argType="android.os.Bundle"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.bignerdranch.android.michaelmei_chenglin_movieapi.MovieDetailFragment"
+        android:label="MovieDetailFragment" >
+
+    </fragment>
+</navigation>

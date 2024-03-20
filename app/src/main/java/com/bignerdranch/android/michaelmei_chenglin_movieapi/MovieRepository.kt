@@ -16,8 +16,8 @@ class MovieRepository {
         movieApi = retrofit.create()
     }
 
-    suspend fun fetchMovie(): MovieItem =
-        movieApi.fetchMovie()
+    suspend fun fetchMovie(title: String): MovieItem =
+        movieApi.fetchMovie(title)
 
 
 }

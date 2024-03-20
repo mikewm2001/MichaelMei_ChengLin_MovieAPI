@@ -6,18 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <EditText
         android:id="@+id/textView"
         android:layout_width="179dp"
         android:layout_height="73dp"
         android:layout_marginStart="116dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="116dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Enter movie title" />
 
     <Button
         android:id="@+id/button"
@@ -26,7 +26,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="160dp"
-        android:text="Button"
+        android:text="Search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
